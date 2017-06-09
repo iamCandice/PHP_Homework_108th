@@ -1,0 +1,33 @@
+html{
+	background-color: #f8dbe6;
+}
+
+body{
+	margin-top: 100px;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+h1{
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.info{
+	padding-top: 15px;
+}
+
+input{
+	margin-top: 8px;
+}
+
+
+table{
+	width: 100%;
+	text-align: center ;
+}
+
+table tr td{
+	padding: 15px;
+}
