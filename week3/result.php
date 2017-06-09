@@ -7,6 +7,7 @@
 	</head>
 	<body>
 		<div class="response">
+			<h1>訂購內容</h1>
 			<table>
 				<tr>
 					<td>學號</td>

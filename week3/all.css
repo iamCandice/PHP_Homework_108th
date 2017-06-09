@@ -1,5 +1,4 @@
 html{
-	background-color: #f8dbe6;
 }
 
 body{
@@ -14,20 +13,35 @@ h1{
 	font-weight: 700;
 }
 
+form{
+	background-color: #f8dbe6;
+	text-align: center;
+}
+
 .info{
 	padding-top: 15px;
 }
 
 input{
 	margin-top: 8px;
+	padding: 4px;
+	font-size: 15px;
 }
 
+textarea{
+	padding: 4px;
+	font-size: 15px;
+	margin-top: 8px;
+}
 
 table{
 	width: 100%;
 	text-align: center ;
+	margin-top: 40px;
+	background-color: #f8dbe6;
 }
 
 table tr td{
 	padding: 15px;
 }
+

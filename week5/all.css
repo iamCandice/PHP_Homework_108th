@@ -1,0 +1,19 @@
+
+body{
+	margin-top: 100px;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+.now{
+	border-bottom: 1px solid black;
+}
+
+.count{
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+}
+
+.month{
+	margin-top: 40px;
+}
