@@ -1,0 +1,55 @@
+html{
+}
+
+body{
+	margin-top: 100px;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+h1{
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+}
+
+h2{
+	font-size: 20px;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 70px;
+}
+
+form{
+	background-color: #f8dbe6;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.info{
+	padding-top: 15px;
+}
+
+input{
+	margin-top: 8px;
+	padding: 4px;
+	font-size: 15px;
+}
+
+textarea{
+	padding: 4px;
+	font-size: 15px;
+	margin-top: 8px;
+}
+
+table{
+	width: 100%;
+	text-align: center ;
+	margin-top: 40px;
+	background-color: #f8dbe6;
+}
+
+table tr td{
+	padding: 15px;
+}
+
