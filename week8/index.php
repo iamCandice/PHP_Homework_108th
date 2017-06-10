@@ -1,7 +1,7 @@
 <?php require_once("connect.php");?>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>吃貨訂餐網</title>
 		<link rel="stylesheet" href="all.css">	
@@ -45,31 +45,14 @@
 				<tbody>
 					<?php
 						$sql = "SELECT * FROM meal_order";
-						// $sql = "SELECT student_id, student_name, student_tel, meal, notice FROM meal_order";
-						$query = mysql_query($sql) or die(mysql_error());
-						while($data=mysql_fetch_array($query)){
-							echo "<tr><td>".$data["student_id"]."</td>
+						$query = mysqli_query($link, $sql) or die(mysqli_error());
+						while($data=mysqli_fetch_array($query)){
+							echo "<tr><td>".$data['student_id']."</td>
 							<td>".$data['student_name']."</td>
 							<td>".$data['student_tel']. "</td>
 							<td>".$data['meal']. "</td>
 							<td>".$data['notice']. "</td></tr>";
 						}
-
-						// while($data=mysqli_fetch_row($query)){
-						// 	echo "<tr><td>".$data['student_id']."</td>";
-						// 	echo "<td>".$data['student_name']."</td>";
-						// 	echo "<td>".$data['student_tel']. "</td>";
-						// 	echo "<td>".$data['meal']. "</td>";
-						// 	echo "<td>".$data['notice']. "</td></tr>";
-						// }
-
-						// while($data=mysqli_fetch_row($query)){
-						// 	echo "<tr><td>".$data[0]."</td>";
-						// 	echo "<td>".$data[1]."</td>";
-						// 	echo "<td>".$data[2]. "</td>";
-						// 	echo "<td>".$data[3]. "</td>";
-						// 	echo "<td>".$data[4]. "</td></tr>";
-						// }
 					?>
 				</tbody>
 			</table>
