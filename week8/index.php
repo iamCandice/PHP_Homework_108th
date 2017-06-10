@@ -46,13 +46,13 @@
 					<?php
 						$sql = "SELECT * FROM meal_order";
 						// $sql = "SELECT student_id, student_name, student_tel, meal, notice FROM meal_order";
-						$query = mysqli_query($sql) or die(mysqli_error());
-						while($data=mysqli_fetch_row($query)){
+						$query = mysql_query($sql) or die(mysql_error());
+						while($data=mysql_fetch_array($query)){
 							echo "<tr><td>".$data["student_id"]."</td>
-							<td>".$data["student_name"]."</td>
-							<td>".$data["student_tel"]. "</td>
-							<td>".$data["meal"]. "</td>
-							<td>".$data["notice"]. "</td></tr>";
+							<td>".$data['student_name']."</td>
+							<td>".$data['student_tel']. "</td>
+							<td>".$data['meal']. "</td>
+							<td>".$data['notice']. "</td></tr>";
 						}
 
 						// while($data=mysqli_fetch_row($query)){
